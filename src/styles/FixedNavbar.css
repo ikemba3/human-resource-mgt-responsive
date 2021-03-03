@@ -39,7 +39,7 @@
 }
 .fixednavbar-wrapper a.nav-link {
   color: var(--background-white-color);
-  padding: 1.2vh 0 1.2vh 4vh;
+  /* padding: 1.2vh 0 1.2vh 4vh; */
   margin-top: 2vh;
   transition: all 0.15s ease-out;
   -webkit-transition: all 0.15s ease-out;
