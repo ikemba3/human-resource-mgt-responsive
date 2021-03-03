@@ -38,7 +38,8 @@ const reducer = combineReducers({
     updateLeaveApp: updateleaveApplicationDetailsEmployeeReducer,
     leaveAppDetails: leaveApplicationDetailsEmployeeReducer,
     getLeaveAppDetails: getleaveApplicationDetailsReducer,
-    createLeaveApp: createleaveApplicationReducer
+    createLeaveApp: createleaveApplicationReducer,
+    getAllLeave: leaveApplicationDetailsEmployeeReducer
 })
 
 const userInfoFromStorage = localStorage.getItem('userInfo')

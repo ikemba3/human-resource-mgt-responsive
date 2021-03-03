@@ -99,7 +99,7 @@ const EducationScreen = ({ history }) => {
           {loading && <Loader />}
           {
             education ? (
-              <Form onSubmit={submitHandler}>
+              <Form onSubmit={submitHandler} className="form-container">
                 <Form.Row>
                   <Form.Group className="col-md-6" controlId='institutionAttended'>
                     <Form.Label>Institution Attended</Form.Label>
@@ -149,7 +149,7 @@ const EducationScreen = ({ history }) => {
               </Form>
 
               ) : (
-              <Form onSubmit={createsubmitHandler}>
+              <Form onSubmit={createsubmitHandler} className="form-container">
                 <Form.Row>
                   <Form.Group  className="col-md-6" controlId='institutionAttended'>
                     <Form.Label>Institution Attended</Form.Label>

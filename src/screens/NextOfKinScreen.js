@@ -111,7 +111,7 @@ const NextOfKinScreen = ({ history }) => {
                 {loading && <Loader />}
                 {
                     nextOfKin ? (
-                        <Form onSubmit={submitHandler}>
+                        <Form onSubmit={submitHandler} className="form-container">
                         <Form.Row>
                             <Form.Group  className="col-md-4" controlId='firstname'>
                                 <Form.Label>Firstname</Form.Label>
@@ -178,7 +178,7 @@ const NextOfKinScreen = ({ history }) => {
                         </Button>
                     </Form>
                     ) : (
-                        <Form onSubmit={createsubmitHandler}>
+                        <Form onSubmit={createsubmitHandler} className="form-container">
                         <Form.Row>
                             <Form.Group  className="col-md-4" controlId='firstname'>
                                 <Form.Label>Firstname</Form.Label>

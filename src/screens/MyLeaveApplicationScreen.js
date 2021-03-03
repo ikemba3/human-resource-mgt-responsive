@@ -19,7 +19,7 @@ const MyLeaveApplicationScreen = ({ history }) => {
     const [fromDate, setLeaveStartDate] = useState('')
     const [toDate, setLeaveEndDate] = useState('')
     const [reasonForLeave, setLeaveDescription] = useState('')
-    const [status, setLeaveStatus] = useState('')
+    const [leaveStatus, setLeaveStatus] = useState('')
      
     const dispatch = useDispatch()
 
@@ -80,7 +80,7 @@ const MyLeaveApplicationScreen = ({ history }) => {
 
     const createsubmitHandler= (e) => {
       e.preventDefault(e)
-      dispatch((
+      dispatch(createLeaveApplication(
          leaveType,
          fromDate,
          toDate,
@@ -151,7 +151,7 @@ const MyLeaveApplicationScreen = ({ history }) => {
             </Form.Group>
             <Form.Group controlId='status'>
               <Form.Label>Status</Form.Label>
-              <Form.Control placeholder="Pending" disabled  value={status}
+              <Form.Control placeholder="Pending" disabled  value={leaveStatus}
                                 onChange={(e) => setLeaveStatus(e.target.value)}  />
             </Form.Group>
           

@@ -31,7 +31,7 @@ const FixedNavbar = ({ history }) => {
     <div className="fixednavbar-wrapper">
       <div className='employee-details'>
         <p>{userInfo.role}</p>
-        <p>{userInfo.email}</p>
+        <p id="useremail">{userInfo.email}</p>
       </div>
 
       <Nav className="flex-column">

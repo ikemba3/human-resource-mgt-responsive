@@ -79,7 +79,7 @@ const StaffCreateScreen = ({ history }) => {
                 {error && <Message variant='danger'>{error}</Message>}
                 {successRegister && <Message variant='success'>Profile Created</Message>}
                 {loading && <Loader />}
-                <Form onSubmit={submitHandler}>
+                <Form onSubmit={submitHandler} className="form-container">
                     <Form.Row>
                         <Form.Group  className="col-md-4" controlId='firstname'>
                             <Form.Label>First Name</Form.Label>

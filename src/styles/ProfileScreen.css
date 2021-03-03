@@ -6,15 +6,19 @@
   text-transform: capitalize;
 }
 .profilescreen-wrapper form {
-  padding: 3vh;
   padding-top: 5vh;
   border-radius: 5px;
+  padding: 30px 30px;
+}
+.form-container{
+  background-color: #fff;
 }
 
 .profilescreen-wrapper form input,
 .profilescreen-wrapper form select {
   margin-bottom: 2vh;
-  background-color: var(--input-field-color);
+  border-radius: 3px;
+  background-color: #e8e8e8 !important;
 }
 .profilescreen-wrapper form select {
   height: 6.9vh;
@@ -30,17 +34,18 @@
   letter-spacing: 1px;
   width: 17vh;
   margin-top: 2vh;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 
               2px 2px 2px rgba(0,0,0,0.25),
-              4px 4px 4px rgba(0,0,0,0.25);
+              4px 4px 4px rgba(0,0,0,0.25); */
 }
 .profilescreen-wrapper form button:hover {
+  text-decoration: none !important;
   background-color: var(--background-blue-color);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.35), 
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.35), 
               2px 2px 2px rgba(0,0,0,0.35),
               4px 4px 4px rgba(0,0,0,0.35),
               -1px -1px 1px rgba(0,0,0,0.05), 
               -2px -2px 2px rgba(0,0,0,0.05),
-              -4px -4px 4px rgba(0,0,0,0.05);
+              -4px -4px 4px rgba(0,0,0,0.05); */
 }

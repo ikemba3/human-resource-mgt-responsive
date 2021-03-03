@@ -1,16 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap'); */
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
 
 
 :root {
   --background-blue-color: #255aa0;
-  --background-white-color: ghostwhite;
+  --background-white-color: #f1f1f1;
   --light-hover-blue: #3670bc;
-  --input-field-color: #e6e6e6;
+  --input-field-color: #f6f6f6;
   --theme-orange-color: #f25833;
 }
 body {
-  background-color: ghostwhite;
+  background-color: #e6e6e6;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -19,7 +21,7 @@ body {
 
 /* ---- Header --- */
 header {
-  background-color: ghostwhite;
+  background-color: #e6e6e6;
   position: relative;
   margin-top: -2vh;
   position: fixed;
@@ -87,10 +89,10 @@ header .xs-header .employee-details {
   margin-top: -1.8vh;
   padding: .3vh 0 .15vh 0;
   color: ghostwhite;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.02), 
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.02), 
               2px 2px 2px rgba(0,0,0,0.02),
-              4px 4px 4px rgba(0,0,0,0.02);
+              4px 4px 4px rgba(0,0,0,0.02); */
 }
 header .xs-header .employee-details p:nth-child(1) {
   font-weight: bold;
@@ -101,10 +103,10 @@ header #basic-navbar-nav {
   background-color: var(--background-blue-color);
   margin-top: 4vh;
   padding: 3vh;
-  border-radius: 5px;
+  border-radius: 3px;
 }
 header #basic-navbar-nav a {
-  color: ghostwhite;
+  /* color: ghostwhite; */
   /* padding: 3vh 0 0 3vh; */
 }
 
@@ -141,26 +143,26 @@ header #basic-navbar-nav a {
   box-shadow: 2px 0 1px var(--background-blue-color) inset;
 }
 .myleave-modal .modal-content button {
-  border-radius: 5px;
+  border-radius: 3px;
 }
 button.applyleave-btn {
   background-color: var(--background-blue-color);
   letter-spacing: 1px;
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 
               2px 2px 2px rgba(0,0,0,0.25),
-              4px 4px 4px rgba(0,0,0,0.25);
+              4px 4px 4px rgba(0,0,0,0.25); */
 }
 button.applyleave-btn:hover,
 button.applyleave-btn:focus,
 button.applyleave-btn:active {
   background-color: var(--background-blue-color);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.35), 
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.35), 
               2px 2px 2px rgba(0,0,0,0.35),
               4px 4px 4px rgba(0,0,0,0.35),
               -1px -1px 1px rgba(0,0,0,0.05), 
               -2px -2px 2px rgba(0,0,0,0.05),
-              -4px -4px 4px rgba(0,0,0,0.05);
+              -4px -4px 4px rgba(0,0,0,0.05); */
 }
 .myleave-table {
   margin-top: 5vh;
@@ -175,29 +177,31 @@ button.applyleave-btn:active {
 }
 .all-leaves button {
   background-color: var(--background-blue-color);
-  border-radius: 5px;
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 
+  border-radius: 3px;
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.25), 
               2px 2px 2px rgba(0,0,0,0.25),
-              4px 4px 4px rgba(0,0,0,0.25);
+              4px 4px 4px rgba(0,0,0,0.25); */
 }
 .all-leaves button:hover,
 .all-leaves button:focus,
 .all-leaves button:active {
   background-color: var(--background-blue-color);
-  box-shadow: 1px 1px 1px rgba(0,0,0,0.35), 
+  /* box-shadow: 1px 1px 1px rgba(0,0,0,0.35), 
               2px 2px 2px rgba(0,0,0,0.35),
               4px 4px 4px rgba(0,0,0,0.35),
               -1px -1px 1px rgba(0,0,0,0.05), 
               -2px -2px 2px rgba(0,0,0,0.05),
-              -4px -4px 4px rgba(0,0,0,0.05);
+              -4px -4px 4px rgba(0,0,0,0.05); */
 }
 /* --- End My Leave --- */
 
 
 
 .page-header {
+  font-size:  20px;
   margin-top: 18vh;
-  color: var(--background-blue-color);
+  letter-spacing: normal;
+  color: #000;
 }
 #logout-navbar-nav {
   width: 10%;
@@ -223,7 +227,7 @@ button.applyleave-btn:active {
 }
 #nav-bar-logo {
   width: 25vh;
-  margin-left: 10px;
+  /* margin-left: 10px; */
   margin-top: 5px;
   padding: 0px;
 }
@@ -234,15 +238,16 @@ button.applyleave-btn:active {
 }
 #logout-navbar-nav {
   /* background-color: red; */
-  width: 10%;
-  background-color: white;
+  width: 100%;
+  color: #000;
+  /* background-color: white; */
   /* margin: 10px; */
 }
 #toggle-switch {
   margin-left: 20px;
   height: 50px;
   /* margin-top: 20px; */
-  float: right;
+  
   /* padding-top: 20px; */
   display: inline-block;
   padding-top: 15px;
@@ -256,6 +261,9 @@ button.applyleave-btn:active {
 .navBar-username {
   float: right;
   margin-right: 30px;
+}
+.navbar{
+  padding: 15px 0 !important;
 }
 
 #logo-img {
@@ -330,4 +338,10 @@ button.applyleave-btn:active {
   header .xs-header nav {
     margin-left: -5vh;
   }
+}
+.table{
+  background-color: #fff;
+}
+.form-body{
+  background-color: #fff !important;
 }

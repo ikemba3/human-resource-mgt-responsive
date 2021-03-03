@@ -128,7 +128,7 @@ const ProfileScreen = ({ history }) => {
             </Col>
             <Col className=' col-lg-9 col-xs-12 col-md-8'>
             <Header />
-                <h1>My Profile</h1>
+                <h1 class="page-header">My Profile</h1>
                
                 {errorCreate && <Message variant='danger'>{errorCreate}</Message>}
                 {errorUpdate && <Message variant='danger'>{errorUpdate}</Message>}
@@ -136,7 +136,7 @@ const ProfileScreen = ({ history }) => {
                 {loading && <Loader />}
                 {
                     profile ? (
-                        <Form onSubmit={submitHandler}>
+                        <Form onSubmit={submitHandler} className="form-container">
                         <Form.Row>
                             <Form.Group  className="col-md-4" controlId='dateOfBirth'>
                                 <Form.Label>Date Of Birth</Form.Label>
@@ -264,7 +264,7 @@ const ProfileScreen = ({ history }) => {
                         </Button>
                     </Form>
                     ) : (
-                        <Form onSubmit={createsubmitHandler}>
+                        <Form onSubmit={createsubmitHandler} className="form-container">
                             <Form.Row>
                                 <Form.Group  className="col-md-4" controlId='dateOfBirth'>
                                     <Form.Label>Date Of Birth</Form.Label>
